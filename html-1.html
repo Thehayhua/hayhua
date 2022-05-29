@@ -1,0 +1,158 @@
+<!doctype html><!--文档类型声明  必须放在html标签前面-->
+<html lang="en"> <!--html标签 根标签--><!--定义当前文档显示的语言：zh-CN是中文，en是英文-->
+<head>  <!--文档头部 必须要设置title标签-->
+    <meta charset="UTF-8"><!--字符集用来使计算机识别和存储各种文字 GB2312简体中文,BIG5繁体中文,GBK包含简体中文和繁体中文,UTF-8基本包含了所有国家的字符（必写）-->
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title><!--网页标题-->
+</head>
+<body><!--页面内容主题都是在这里面的-->
+<!-- <h1>,<h2>,<h3>,<h4>,<h5>,<h6>,标题标签 -->
+<h1>标题标签</h1>
+<h2>标题标签</h2>
+<h3>标题标签</h3>
+<h4>标题标签</h4>
+<h5>标题标签</h5>
+<h6>标题标签</h6>
+<!--段落标签  一个段落根据浏览器大小自动换行-->
+<p>段落标签</p>
+<!--换行标签-->
+<br/>
+
+<h1>中央向实际种粮农民发100亿元补贴</h1>
+<h4>中国新闻网</h4>
+<p>中新财经5月22日电
+    据财政部官网消息，近日，根据党中央、国务院决策部署，统筹考虑农资市场价格走势和农业生产形势，中央财政下达资金100亿元，再次向实际种粮农民发放一次性农资补贴，支持夏收和秋播生产，缓解农资价格上涨带来的种粮增支影响，进一步调动农民种粮积极性。(完)</p>
+<!--文本格式化标签-->
+<!--粗体,推荐使用strong-->
+<strong>加粗</strong>
+<b>加粗</b>
+<!--倾斜,推荐使用em-->
+<em>倾斜</em>
+<i>倾斜</i>
+<!--删除线,推荐使用del-->
+<del>删除线</del>
+<s>删除线</s>
+<!--下划线,推荐使用ins-->
+<ins>下划线</ins>
+<u>下划线</u>
+<!--块标签和行内标签-->
+<div>块标签</div><!--独占一行-->
+<span>行内标签</span><!-- 一行内放多个 -->
+<!--图像标签-->
+<img src="" alt="" width="" height="" border="" title=""><!--src的必须属性,alt图像显示不出来替换的文本,title鼠标悬浮到图片上提示的文字,width图像宽度,height图像高度,border图像边框粗细-->
+同级路径就直接/img.jpg
+下一级路径images/img.jpg
+上一级路径../img.jpg
+<!--相对于html路径-->
+
+<!--超链接-->
+<a href=""></a><!--href连接目标的url地址,target目标窗口的弹出方式,_self为当前页面,_blank为在新窗口打开方式 -->
+<a href="https://www.baidu.com/" target="_blank">百度</a>
+<!--
+外部连接：<a href="https://www.baidu.com/">百度</a>
+内部连接：直接连接内部页面名称,例如index.html
+空连接：<a href="#"></a>
+下载连接：地址连接的是文件 .exe或者.zip等格式,<a href="img.zip"></a>
+网页元素连接：在网页中的各种元素都可以添加超链接
+锚点连接：可以快速定位到页面中的某个位置
+-->
+<!--注释标签和特殊字符-->
+<!--注释-->
+<!-- &nbsp; &lt; &gt; -->
+<!--表格的基本语法-->
+<table>
+
+    <tr><!--tr是行-->
+        <th>我</th>
+        <td>是</td><!--td是列-->
+        <td>帅</td>
+        <td>逼</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+
+</table>
+<!--表格属性-->
+<table align="center" border="1" cellpadding="20" cellspacing="0" width="500" height="200">
+    <!--
+    align,属性：left,center,right,用于规定表格相对周围元素的对齐方式
+    border,属性:1或者"",规定单元表格是否拥有边框,默认为"",表示没有边框
+    cellpadding,属性:像素值,规定单元边沿与其内容之间的空白,默认1像素。
+    cellspacing,属性:像素值,规定单元格之间的空白，默认2像素。
+    width,属性:像素值或百分比,规定表格的宽度。
+    height同理
+    -->
+    <tr>
+        <th>我</th>
+        <td>是</td>
+        <td>帅</td>
+        <td>逼</td>
+    </tr>
+    <tr>
+        <th>帅</th>
+        <td>逼</td>
+        <td>是</td>
+        <td>我</td>
+    </tr>
+    <tr><!--tr是行-->
+        <th>我</th>
+        <td>是</td><!--td是列-->
+        <td>帅</td>
+        <td>逼</td>
+    </tr>
+</table>
+<!--表格结构标签-->
+<thead></thead><!--thead内部必须有<tr>标签-->
+<tbody></tbody>
+<!--合并单元格-->
+<!--表单标签-->
+<!--
+tpye属性值：
+button 定义可点击按钮，通过javascrpt启动脚本
+checkbox 定义复选框
+file 定义输入字段和浏览按钮，供文件上传
+hidden 定义隐藏的输入字段
+image  定义图像形式的提交按钮
+password 定义密码字段，该字段的字符会被隐藏
+radio 定义单选按钮
+reset 定义重置按钮
+submit 定义提交按钮，点击会把表单内的信息提交到服务器
+text 定义当行的输入字段
+-->
+<!--表单元素
+name和value是每个元素都有的属性值
+name是表单元素的名字，每个单选按钮和复选框要有相同的name值
+checked针对单选按钮和复选框，打开页面选中某个表单元素
+maxlength可以限制最大字符数
+-->
+<!--<label>标签-->
+<label for="sex">男</label>
+<input type="radio" name="sex" id="sex" /><br />
+
+<!--<select>表单属性-->
+<select name="" id="">
+    <option value="">山东</option>
+    <option value="">广东</option>
+    <option value="">广西</option>
+    <option value="">山西</option>
+    <option value="">北京</option>
+</select>
+<!--<select>至少包含一对 <option>-->
+<!--option定义selected="selected"时，则选中当前为默认选中项-->
+
+<!--<textarea>表单元素-->
+<textarea name="" id="textarea" cols="3" rows="10">
+    我是大帅逼
+</textarea>
+</body>
+</html>
